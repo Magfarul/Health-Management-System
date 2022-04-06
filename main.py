@@ -9,7 +9,7 @@ def startmenu():
         print("Enter \n1:Munna \n2:Moon\n3:Mahin")
         old_name=input()
         if old_name=="1":
-            print("Enter 1 for Food, 2 for excersice")
+            print("Enter 1 for Food, 2 for exercise")
             m_food=input()
             if m_food == "1":
                 food_m=open("MunnaFood.txt")
@@ -18,7 +18,7 @@ def startmenu():
                 Ex_m=open("MunnaEx.txt")
                 print(Ex_m.read())
         elif old_name=="2":
-            print("Enter 1 for Food, 2 for excersice")
+            print("Enter 1 for Food, 2 for exercise")
             mn_food=input()
             if mn_food == "1":
                 food_mn=open("MoonFood.txt")
@@ -28,7 +28,7 @@ def startmenu():
                 print(EX_mn.read())
                 
         elif old_name =="3":
-            print("Enter 1 for Food, 2 for excersice")
+            print("Enter 1 for Food, 2 for exercise")
             mh_food=input()
             if mh_food == "1":
                 food_mh=open("MahinFood.txt")
@@ -41,7 +41,7 @@ def startmenu():
         print("Enter \n1:Munna \n2:Moon\n3:Mahin")
         old_name=input()
         if old_name=="1":
-            print("Enter 1 for Food, 2 for excersice")
+            print("Enter 1 for Food, 2 for exercise")
             m_food=input()
             if m_food == "1":
                 food_m=open("MunnaFood.txt","a")
@@ -51,11 +51,11 @@ def startmenu():
             
             elif m_food == "2":
                 Ex_m=open("MunnaEx.txt","a")
-                eEx=input("Enter Excersice")
+                eEx=input("Enter Exercise")
                 Ex_m.write(str(getime())+":	"+eEx+("\n"))
                 Ex_m.close()
         elif old_name=="2":
-            print("Enter 1 for Food, 2 for excersice")
+            print("Enter 1 for Food, 2 for exercise")
             mn_food=input()
             if mn_food == "1":
                 food_mn=open("MoonFood.txt","a")
@@ -64,12 +64,12 @@ def startmenu():
                 food_mn.close()
             elif mn_food == "2":
                 EX_mn=open("MoonEX.txt","a")
-                eEx=input("Enter Excersice\n")
+                eEx=input("Enter Exercise\n")
                 EX_mn.write(str(getime())+":	"+eEx+"\n")
                 EX_mn.close()
                 
         elif old_name =="3":
-            print("Enter 1 for Food, 2 for excersice")
+            print("Enter 1 for Food, 2 for exercisc")
             mh_food=input()
             if mh_food == "1":
                 food_mh=open("MahinFood.txt","a")
@@ -80,7 +80,7 @@ def startmenu():
                 
             elif mn_food == "2":
                 EX_mh=open("MahinEX.txt","r+")
-                eEx=input("Enter Excersice\n")
+                eEx=input("Enter Exercise\n")
                 EX_mh.write(str(getime())+":	"+eEx+"\n")
                 EX_mh.close()
     else:
